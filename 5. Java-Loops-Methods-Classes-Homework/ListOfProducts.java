@@ -32,8 +32,7 @@ public class ListOfProducts {
                 writer.println(product.getPrice() + " " + product.getName());
             }
 
-            reader.close();
-            writer.close();
+
 
         } catch (FileNotFoundException e) {
             System.out.println("Error");
