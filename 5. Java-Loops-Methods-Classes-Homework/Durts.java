@@ -25,7 +25,7 @@ public class Durts {
             int x = Integer.parseInt(scanner.next());
             int y = Integer.parseInt(scanner.next());
 
-            if(isPointInRectangle(
+            if (isPointInRectangle(
                     x,
                     y,
                     horizontalRectangleMinX,
@@ -39,7 +39,7 @@ public class Durts {
                     verticalRectangleMinX,
                     verticalRectangleMaxX,
                     verticalRectangleMinY,
-                    verticalRectangleMaxY)){
+                    verticalRectangleMaxY)) {
                 System.out.println("yes");
             } else {
                 System.out.println("no");
@@ -55,7 +55,7 @@ public class Durts {
             double minY,
             double maxY) {
         boolean isInRectangle = ((x >= minX) && (x <= maxX)) && ((y >= minY) && (y <= maxY));
-        
+
         return isInRectangle;
     }
 }
