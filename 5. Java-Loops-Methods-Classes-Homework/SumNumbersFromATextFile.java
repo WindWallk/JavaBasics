@@ -13,7 +13,7 @@ public class SumNumbersFromATextFile {
 
             String line = bufferedReader.readLine();
 
-            while(line != null) {
+            while (line != null) {
                 sum += Integer.parseInt(line);
                 line = bufferedReader.readLine();
             }

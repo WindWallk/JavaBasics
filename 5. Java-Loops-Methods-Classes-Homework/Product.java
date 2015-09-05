@@ -28,7 +28,7 @@ public class Product implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        Product otherProduct = (Product)o;
+        Product otherProduct = (Product) o;
         return this.price.compareTo(otherProduct.price);
     }
 }

@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Excel {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         try {
             FileInputStream excelFile = new FileInputStream("5. Incomes-Report.xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(excelFile);
@@ -27,7 +27,7 @@ public class Excel {
                 Cell totalIncomeCell = row.getCell(5);
                 double income = totalIncomeCell.getNumericCellValue();
 
-                if(!officesInfo.containsKey(office)) {
+                if (!officesInfo.containsKey(office)) {
                     officesInfo.put(office, income);
                 } else {
                     officesInfo.put(office, officesInfo.get(office) + income);

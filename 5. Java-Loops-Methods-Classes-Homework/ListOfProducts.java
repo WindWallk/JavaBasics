@@ -26,12 +26,11 @@ public class ListOfProducts {
             Collections.sort(products);
 
             File outputWriter = new File("listProducts_output.txt");
-            PrintStream  writer = new PrintStream(outputWriter);
+            PrintStream writer = new PrintStream(outputWriter);
 
             for (Product product : products) {
                 writer.println(product.getPrice() + " " + product.getName());
             }
-
 
 
         } catch (FileNotFoundException e) {

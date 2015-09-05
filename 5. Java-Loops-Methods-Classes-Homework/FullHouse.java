@@ -20,10 +20,10 @@ public class FullHouse {
                                 for (int faceSecond = 0; faceSecond < faces.length; faceSecond++) {
                                     if (faceFirst != faceSecond) {
                                         String fullHouse = "(" + faces[faceFirst] + suits[suit1] + " " +
-                                                            faces[faceFirst] + suits[suit2] + " " +
-                                                            faces[faceFirst] + suits[suit3] + " " +
-                                                            faces[faceSecond] + suits[suit1Second] + " " +
-                                                            faces[faceSecond] + suits[suit2Second] + ")";
+                                                faces[faceFirst] + suits[suit2] + " " +
+                                                faces[faceFirst] + suits[suit3] + " " +
+                                                faces[faceSecond] + suits[suit1Second] + " " +
+                                                faces[faceSecond] + suits[suit2Second] + ")";
 
                                         System.out.println(fullHouse);
                                         countOfFullHouses++;

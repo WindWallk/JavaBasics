@@ -48,7 +48,7 @@ public class FullHouseWithJokers {
         System.out.println();
         for (int i = index; i < 5; i++) {
             temporary.add(hand[i]);
-            findFullHouses(i + 1, hand, temporary); // call recursively
+            findFullHouses(i + 1, hand, temporary);
             temporary.remove(temporary.size() - 1);
         }
     }
